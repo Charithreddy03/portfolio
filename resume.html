@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M. Charith Reddy | Software Engineer</title>
+<meta name="description" content="Portfolio of M. Charith Reddy, Software Engineer with 5+ years experience in scalable development and cloud migration.">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f7fa;
+    color:#333;
+}
+
+/* NAVIGATION */
+header{
+    background:#0d6efd;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    padding:15px 0;
+}
+
+nav{
+    width:85%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:white;
+    font-size:22px;
+    font-weight:bold;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:600;
+}
+
+nav ul li a:hover{
+    text-decoration:underline;
+}
+
+/* HERO */
+.hero{
+    height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(to right,#0d6efd,#4dabf7);
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:48px;
+}
+
+.hero h3{
+    margin:15px 0;
+    font-weight:400;
+}
+
+.btn{
+    padding:12px 28px;
+    background:white;
+    color:#0d6efd;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#e6e6e6;
+}
+
+/* SECTIONS */
+section{
+    padding:70px 12%;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:30px;
+    font-size:30px;
+    color:#0d6efd;
+}
+
+/* CARDS */
+.card{
+    background:white;
+    padding:20px;
+    margin:20px auto;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+/* SKILLS */
+.skill{
+    margin-bottom:20px;
+}
+
+.progress{
+    background:#ddd;
+    border-radius:20px;
+    overflow:hidden;
+    height:10px;
+}
+
+.progress span{
+    display:block;
+    height:100%;
+    background:#0d6efd;
+}
+
+/* CONTACT */
+#contact p{
+    text-align:center;
+    margin:10px 0;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#0d6efd;
+    color:white;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    nav ul{
+        flex-direction:column;
+    }
+    nav ul li{
+        margin:10px 0;
+    }
+    .hero h1{
+        font-size:32px;
+    }
+    section{
+        padding:50px 5%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+    <div class="logo">Charith</div>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+</header>
+
+<section class="hero">
+    <h1>M. Charith Reddy</h1>
+    <h3>Software Engineer</h3>
+    <p>Experienced in scalable development and cloud migration solutions.</p>
+    <a href="#contact" class="btn">Hire Me</a>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+        <p>
+        Software Developer with 5+ years of experience building scalable and well-documented applications.
+        Participated in AWS to GCP cloud migration initiatives and mentored junior frontend developers.
+        Strong team collaborator and independent problem solver.
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="card">
+        <div class="skill">
+            <p>C Programming</p>
+            <div class="progress"><span style="width:85%"></span></div>
+        </div>
+        <div class="skill">
+            <p>Cloud Migration (AWS → GCP)</p>
+            <div class="progress"><span style="width:75%"></span></div>
+        </div>
+        <div class="skill">
+            <p>Frontend Mentorship</p>
+            <div class="progress"><span style="width:70%"></span></div>
+        </div>
+    </div>
+</section>
+
+<section id="experience">
+    <h2>Work Experience</h2>
+    <div class="card">
+        <h3>Software Developer (2019 - Present)</h3>
+        <p>Worked on AWS to GCP migration to reduce infrastructure costs and improve scalability. Mentored 3 junior developers.</p>
+    </div>
+    <div class="card">
+        <h3>Help Desk Analyst (2018 - 2019)</h3>
+        <p>Resolved technical issues for 20+ clients daily and improved support response efficiency.</p>
+    </div>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+    <div class="card">
+        <h3>B.Sc in Computer Science</h3>
+        <p>Reva University (2021 - 2023)</p>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="card">
+        <h3>Cloud Migration Strategy Tool</h3>
+        <p>Developed internal framework for seamless AWS to GCP migration with cost analysis module.</p>
+    </div>
+    <div class="card">
+        <h3>Support Ticket Management System</h3>
+        <p>Built a helpdesk ticketing platform to streamline client issue resolution.</p>
+    </div>
+    <div class="card">
+        <h3>Developer Training Portal</h3>
+        <p>Designed mentoring portal for onboarding and training junior frontend engineers.</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: malluricharithreddy@gmail.com</p>
+    <p>Phone: +91 9032498884</p>
+    <p>Location: Gokul Street, Punganur</p>
+</section>
+
+<footer>
+    © 2026 M. Charith Reddy | Software Engineer
+</footer>
+
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href"))
+            .scrollIntoView({ behavior: "smooth" });
+    });
+});
+</script>
+
+</body>
+</html>
